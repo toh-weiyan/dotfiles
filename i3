@@ -1,0 +1,1 @@
+/home/tohweiyan/.config/i3/config
