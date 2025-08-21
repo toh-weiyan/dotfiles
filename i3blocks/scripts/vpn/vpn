@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -d /proc/sys/net/ipv4/conf/tun0 ]; then 
+    vpn=$(nmcli | grep 'VPN connection' | awk -F ' VPN connection' '{print $1}')
+    echo "  $vpn VPN ";
+    echo VPN;
+    else 
+        exit 0
+    fi
+
